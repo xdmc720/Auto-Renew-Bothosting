@@ -36,10 +36,9 @@ jobs:
 
       - name: 🚀 运行续期脚本
         env:
-          USERNAME: ${{ secrets.USERNAME }}
-          USER_ID: ${{ secrets.USER_ID }}
-          SESSION_TOKEN: ${{ secrets.SESSION_TOKEN }}
+          EMAIL: ${{ secrets.EMAIL }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          SESSION_TOKEN: ${{ secrets.SESSION_TOKEN }}
           TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
           TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
         run: |
